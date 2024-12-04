@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <form id="form">
+        <h1>Register</h1>
+
+        <label for="name">Username :</label><br>
+        <input type="text" id="name" placeholder="Enter at least 3 characters" required><br>
+
+        <label for="mail">Email Address :</label><br>
+        <input type="email" id="mail" placeholder="Enter your email" required><br>
+
+        <label for="pass">Password :</label><br>
+        <input type="password" id="pass" placeholder="8+ characters, incl uppercase, lowercase, symbol" required><br>
+
+        <label for="cpass">Re-Enter your password :</label><br>
+        <input type="password" id="cpass" placeholder="Confirm your password" required><br>
+
+        <label for="gen">Gender :</label><br>
+        <select name="gender" id="gen">
+            <option value="Select gender">Select gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+        </select><br>
+
+        <label for="mnum">Mobile Number :</label><br>
+        <input type="tel" id="mnum" placeholder="Enter a 10-digit number" required><br>
+
+        <input type="checkbox" required>I agree to the terms & conditions
+        <br><br><button type="submit" id="btn">Register</button>
+    </form><br><br>
+
+    <form id="otpbox">
+        <label for="check">Enter the OTP :</label><br>
+        <input type="text" id="check" required>
+        <button type="submit">Verify</button>
+    </form>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
